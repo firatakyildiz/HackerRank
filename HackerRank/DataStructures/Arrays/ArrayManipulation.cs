@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace HackerRank.DataStructures.Arrays
 {
+    /// <summary>
+    /// Link : https://www.hackerrank.com/challenges/crush
+    /// Difficulty : Hard
+    /// </summary>
     public class ArrayManipulation
     {
         public static void Solve() {
@@ -17,16 +19,15 @@ namespace HackerRank.DataStructures.Arrays
                 int a = Convert.ToInt32(tokens_a[0]);
                 int b = Convert.ToInt32(tokens_a[1]);
                 int k = Convert.ToInt32(tokens_a[2]);
-                //// lets try naive way
-                //for (int i = a; i <= b; i++)
-                //{
-                //    arr[i - 1] += k;
-                //}
-                //// ofc it failed,lets try something more efficient
-                arr[a - 1] += k;
-                arr[b - 1] -= k;
+                // instead of calculating each element in the array,
+                // lets just keep differences from a previous element
+                arr[a - 1] += k; // this element is k more than its previous
+                // this element is k less than its previous
+                // if we are end of the list, do not try to update anything
+                if (b != n) 
+                    arr[b] -= k;
             }
-            // now the problem is reduced to max subsequence.this is solved in O(n)
+            // now the problem is reduced to max continuous subsequence.this is solved in O(n)
             long globalMaximum = 0;
             long localMaximum = 0;
             for (int i = 0; i < n; i++)
@@ -34,8 +35,6 @@ namespace HackerRank.DataStructures.Arrays
                 localMaximum += arr[i];
                 if (globalMaximum < localMaximum)
                     globalMaximum = localMaximum;
-                if (localMaximum < 0)
-                    localMaximum = 0;
             }
             Console.WriteLine(globalMaximum);
         }
