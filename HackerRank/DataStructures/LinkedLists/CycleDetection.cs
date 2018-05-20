@@ -30,7 +30,7 @@ namespace HackerRank.DataStructures.LinkedLists
         /// If we reach the end of the list while iterating, there are no cycles.
         /// If at some point two pointers point to the same node, then there is a cycle in the list.
         /// </summary>
-
+        
         //bool has_cycle(Node* head)
         //{
         //    if(head == null || head->next == null)
