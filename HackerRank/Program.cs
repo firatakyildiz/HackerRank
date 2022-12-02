@@ -1,6 +1,6 @@
 ﻿using HackerRank.Algorithms.Implementation;
 using HackerRank.DataStructures.Arrays;
-using HackerRank.Interviews;
+using HackerRank.ProjectEuler;
 using System;
 
 
@@ -10,7 +10,7 @@ namespace HackerRank
     {
         static void Main(string[] args)
         {
-            QueensAttack2.Solve();
+            ProjectEuler._1.Solve();
             Console.WriteLine("Program ended.Press enter to quit.");
             Console.ReadLine();
         }
