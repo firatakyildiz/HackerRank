@@ -22,15 +22,15 @@ namespace HackerRank.ProjectEuler
                 
                 while (true)
                 {
-                    number = getNextLowerPalindrome(number);
-                    if (isProductOfTwo3DigitNumbers(number))
+                    number = GetNextLowerPalindrome(number);
+                    if (IsProductOfTwo3DigitNumbers(number))
                         break;
                 }
                 Console.WriteLine(number);
             }
         }
 
-        private static void mirrorRightHalfOfStringBuilder(StringBuilder builder)
+        private static void MirrorRightHalfOfStringBuilder(StringBuilder builder)
         {
             if (builder.Length == 3)
                 builder.Length = 6;
@@ -39,10 +39,10 @@ namespace HackerRank.ProjectEuler
             builder[5] = builder[0];
         }
 
-        private static int getNextLowerPalindrome(int number)
+        private static int GetNextLowerPalindrome(int number)
         {
             var builder = new StringBuilder(number.ToString());
-            mirrorRightHalfOfStringBuilder(builder);
+            MirrorRightHalfOfStringBuilder(builder);
             var candidate = int.Parse(builder.ToString());
 
             if (candidate < number)
@@ -51,13 +51,13 @@ namespace HackerRank.ProjectEuler
             candidate = int.Parse(builder.ToString().Substring(0, 3));
             candidate--;
             builder = new StringBuilder(candidate.ToString());
-            mirrorRightHalfOfStringBuilder(builder);
+            MirrorRightHalfOfStringBuilder(builder);
             candidate = int.Parse(builder.ToString());
 
             return candidate;
         }
 
-        private static bool isProductOfTwo3DigitNumbers(int number)
+        private static bool IsProductOfTwo3DigitNumbers(int number)
         {
             for (var i = 100; i < 1000; i++)
             {
