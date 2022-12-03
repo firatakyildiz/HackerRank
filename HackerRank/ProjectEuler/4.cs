@@ -18,7 +18,7 @@ namespace HackerRank.ProjectEuler
             var numberOfTestCases = Convert.ToInt32(Console.ReadLine());
             for (var i = 0; i < numberOfTestCases; i++)
             {
-                var number = Convert.ToInt32((Console.ReadLine()));
+                var number = Convert.ToInt32(Console.ReadLine());
                 
                 while (true)
                 {
