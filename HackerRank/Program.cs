@@ -10,7 +10,7 @@ namespace HackerRank
     {
         public static void Main()
         {
-            ProjectEuler._10.Solve();
+            ProjectEuler._011.Solve();
             //Console.WriteLine("Program ended.Press enter to quit.");
             //Console.ReadLine();
         }
