@@ -6,13 +6,13 @@ using System;
 
 namespace HackerRank
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            ProjectEuler._8.Solve();
-            Console.WriteLine("Program ended.Press enter to quit.");
-            Console.ReadLine();
+            ProjectEuler._10.Solve();
+            //Console.WriteLine("Program ended.Press enter to quit.");
+            //Console.ReadLine();
         }
     }
 }
