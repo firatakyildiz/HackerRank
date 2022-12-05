@@ -10,7 +10,7 @@ namespace HackerRank
     {
         public static void Main()
         {
-            ProjectEuler._011.Solve();
+            OneWeekPreparationKit.Day1_TimeConversion.Solve();
             //Console.WriteLine("Program ended.Press enter to quit.");
             //Console.ReadLine();
         }
