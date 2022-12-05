@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HackerRank.OneWeekPreparationKit
+namespace HackerRank.OneWeekPreparationKit.Day1
 {
     /// <summary>
     /// Link : https://www.hackerrank.com/challenges/one-week-preparation-kit-mini-max-sum/problem
@@ -12,7 +9,7 @@ namespace HackerRank.OneWeekPreparationKit
     /// Solution : For the biggest sum of 4 numbers, find the minimum number and subtract it from the total.
     /// For the smallest sum, do the same with the maximum number
     /// </summary>
-    public static class Day1_MiniMaxSum
+    public static class MiniMaxSum
     {
         public static void Solve()
         {

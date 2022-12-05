@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HackerRank.OneWeekPreparationKit
+namespace HackerRank.OneWeekPreparationKit.Day1
 {
-    internal class Day1_MockTest
+    internal class MockTest
     {
         public static int findMedian(List<int> arr)
         {

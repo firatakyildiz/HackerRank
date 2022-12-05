@@ -1,5 +1,6 @@
 ﻿using HackerRank.Algorithms.Implementation;
 using HackerRank.DataStructures.Arrays;
+using HackerRank.OneWeekPreparationKit.Day1;
 using HackerRank.ProjectEuler;
 using System;
 
@@ -10,7 +11,7 @@ namespace HackerRank
     {
         public static void Main()
         {
-            OneWeekPreparationKit.Day1_TimeConversion.Solve();
+            TimeConversion.Solve();
             //Console.WriteLine("Program ended.Press enter to quit.");
             //Console.ReadLine();
         }

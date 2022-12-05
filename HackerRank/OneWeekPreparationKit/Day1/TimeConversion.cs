@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HackerRank.OneWeekPreparationKit
+namespace HackerRank.OneWeekPreparationKit.Day1
 {
     /// <summary>
     /// Link : https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem
     /// Difficulty : Easy
     /// Solution : Simple calculation
     /// </summary>
-    public static class Day1_TimeConversion
+    public static class TimeConversion
     {
         public static void Solve()
         {
