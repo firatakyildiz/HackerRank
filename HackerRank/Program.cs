@@ -11,7 +11,7 @@ namespace HackerRank
     {
         public static void Main()
         {
-            TimeConversion.Solve();
+            OneWeekPreparationKit.Day4.NewYearChaos.Solve();
             //Console.WriteLine("Program ended.Press enter to quit.");
             //Console.ReadLine();
         }

@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace HackerRank.OneWeekPreparationKit.Day3
 {
+    /// <summary>
+    /// Link : https://www.hackerrank.com/challenges/one-week-preparation-kit-caesar-cipher-1/problem
+    /// Difficulty : Easy
+    /// Solution : Simple calculation
+    /// </summary>
     public static class CaesarCipher
     {
         private const int AlphabetSize = 26;
