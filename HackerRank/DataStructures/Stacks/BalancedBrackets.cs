@@ -7,15 +7,14 @@ namespace HackerRank.DataStructures.Stacks
     /// Link : https://www.hackerrank.com/challenges/balanced-brackets/problem
     /// Difficulty : Medium
     /// </summary>
-    class BalancedBrackets
+    public static class BalancedBrackets
     {
-        private static string isBalanced(string s)
+        private static string IsBalanced(string s)
         {
             var stack = new Stack<char>();
             var result = true;
             foreach (var c in s)
             {
-                char openingCharacter;
                 switch (c)
                 {
                     case '(':
@@ -29,8 +28,7 @@ namespace HackerRank.DataStructures.Stacks
                             result = false;
                             break;
                         }
-                        openingCharacter = stack.Pop();
-                        if (openingCharacter != '(')
+                        if (stack.Pop() != '(')
                             result = false;
                         break;
                     case ']':
@@ -39,8 +37,7 @@ namespace HackerRank.DataStructures.Stacks
                             result = false;
                             break;
                         }
-                        openingCharacter = stack.Pop();
-                        if (openingCharacter != '[')
+                        if (stack.Pop() != '[')
                             result = false;
                         break;
                     case '}':
@@ -49,8 +46,7 @@ namespace HackerRank.DataStructures.Stacks
                             result = false;
                             break;
                         }
-                        openingCharacter = stack.Pop();
-                        if (openingCharacter != '{')
+                        if (stack.Pop() != '{')
                             result = false;
                         break;
                 }
@@ -63,12 +59,10 @@ namespace HackerRank.DataStructures.Stacks
 
         public static void Solve()
         {
-            int t = Convert.ToInt32(Console.ReadLine());
-            for (int a0 = 0; a0 < t; a0++)
+            var numberOfTestCases = Convert.ToInt32(Console.ReadLine());
+            for (var i = 0; i < numberOfTestCases; i++)
             {
-                string s = Console.ReadLine();
-                string result = isBalanced(s);
-                Console.WriteLine(result);
+                Console.WriteLine(IsBalanced(Console.ReadLine()));
             }
         }
     }
