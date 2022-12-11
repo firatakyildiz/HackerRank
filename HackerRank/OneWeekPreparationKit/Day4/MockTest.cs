@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace HackerRank.OneWeekPreparationKit.Day4
 {
+    /// <summary>
+    /// Use brute-force to check each petrol pump for being feasible.
+    /// </summary>
     internal class MockTest
     {
         public static int truckTour(List<List<int>> petrolpumps)
