@@ -11,7 +11,7 @@ namespace HackerRank
     {
         public static void Main()
         {
-            OneWeekPreparationKit.Day6.JesseAndCookies.Solve();
+            OneWeekPreparationKit.Day7.NoPrefixSet.Solve();
             //Console.WriteLine("Program ended.Press enter to quit.");
             //Console.ReadLine();
         }
